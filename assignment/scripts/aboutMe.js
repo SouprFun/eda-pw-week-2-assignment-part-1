@@ -54,10 +54,10 @@ if(pets < allowedPets){
     console.log("I can have more pets!");
 }
 else if(pets == allowedPets){
-    console.log("I have enough pets! :'(")
+    console.log("I have enough pets! :'(");
 }
 else if(pets > allowedPets){
-    console.log("I have too many pets! :O")
+    console.log("I have too many pets! :O");
 }
 // STRETCH GOALS:
 
@@ -66,7 +66,18 @@ else if(pets > allowedPets){
 // assigns the highest value to `mostPets`. There's several possibilities --
 // be sure to think through all the scenarios. 
 // console.log `mostPets` after the conditional has run.
+let mostPets
+if(pets < friendsPets){
+    mostPets = friendsPets;
+}
+else if(pets == friendsPets){
+    mostPets = pets;
+}
+else if(pets > friendsPets){
+    mostPets = pets;
 
+}
+console.log( mostPets);
 // 17 - Write a *switch* statement that logs:
 //      "First is the worst" if your lucky number is 1
 //      "Second is the best" if your lucky number is 2
